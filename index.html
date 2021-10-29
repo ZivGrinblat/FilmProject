@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>The Star Wars API</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+<h1>The Star Wars API</h1>
+
+<div class="left">
+    <h2>Movies</h2>
+    <h3 onclick="show(1)">A New Hope</h3>
+    <h3 onclick="show(2)">The Empire Strikes Back</h3>
+    <h3 onclick="show(3)">Return of the Jedi</h3>
+    <h3 onclick="show(4)">The Phantom Menace</h3>
+    <h3 onclick="show(5)">Attack of the Clones</h3>
+    <h3 onclick="show(6)">Revenge of the Sith</h3>
+</div>
+
+<div class="main">
+    <div style="opacity: 1;">
+    <h2>Movie Data</h2>
+    
+    <div class="fav-container">
+        <i id="fav" class="fas fa-heart" onclick="setfav()"></i>
+        <input type="hidden" id="favdata">
+    </div>
+    
+    <div id="result"></div>
+
+</div>
+</div>
+
+<script src="js/film.js"></script>
+</body>
+
+
+
+</html>
